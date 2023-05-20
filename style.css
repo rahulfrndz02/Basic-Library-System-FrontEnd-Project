@@ -1,71 +1,157 @@
-body {
-    margin: 0;
-    padding: 0;
+html {
+    scroll-behavior: smooth;
   }
-/* CSS for the navigation bar */
-.navbar{
+  
+body {
+      margin: 0;
+      margin-bottom: 100px;
+      padding: 0;
+      background-color:whitesmoke;
+      
+  }
+  
+  
+  
+  /* navbar */
+  
+  
+header{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px;
+    padding: 0px;
     background-color: #333;
     overflow: hidden; /*if not not used then background color will be white and text will not visible*/
-}
-
-.navbar a{
-    float: left;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;  /*remove the underline fron the text */
-    font-size: 18px;
-}
-
-  /* CSS for left and right alignment */
-.navbar-left{
-    float: left;   /*moving text to the left side*/
-}
-
-.navbar-right{
-    float: right;  /*moving text to the right side*/
-}
-
-.navbar a:hover{   /*change the color of link*/
-    color: blue;
-}
-
-/* CSS stye for book table */
-
-
-table td{
-    width: 200px;
-    height: 30px;
-    text-align: center;
-  }
-
-input{
-    height: 15%;
-    width: 100%;
   }
   
-
-.button{
-    background: black;
-    color:white;
-    height: 2rem;
-    width: 100%;
+.navbar a{
+      text-decoration: none;
+      color:white;
+}
+  
+  .logo a:hover, ul li a:hover{
+      color: rgb(24, 17, 224);
+  }
+  
+  
+nav{
+      position: sticky;
+      top:0;
+  }
+  
+.navbar{
+       display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-right: 20px;
+      margin-left: 20px;
+  
+  }
+  
+.list-items li{
+      display: inline-block;
+      margin-right: 10px;
+  }
+  
+li {
+      list-style: none;
+  }
+  
+div ul li a:link{
+      text-decoration: none;
+      color:white;
+  }
+  
+  
+  /* table & registration common styles*/
+  
+.table-sec , .registration-sec{
+      margin-left: 25%;
+      background-color: white;
+      width:50%;
+      box-shadow: 0 0 5px rgb(193, 184, 184);
+      
+  }
+ 
+  
+  .table-container, .form-container{
+      margin-left:20px ;
+      padding-bottom: 10px;
+      
+  }
+  
+  .table-container h1, .form-container h1{
+      margin-top:50px ;
+      padding-top: 100px;
   }
 
-.content {
-    margin-top: 60px; /* Adjust this value to leave space below the fixed navigation bar */
+  
+  /* table */
+  
+  #main-table{
+      width: 95%;
+  }
+  
+  table, td , th {
+      border:1px solid rgba(173, 174, 171, 0.927);
+     
+  }
+  
+  td , th{
+      padding:10px;
+  }
+  
+  table,th,tbody,td{
+      border-spacing: 0;
+      
+  } 
+  
+.nested-table td{
+      
+      padding: 7px;
+      margin: 15px;
+  }
+  
+.table-sec{
+      background-color: white;
+      width: 50%;
+      margin-top: 10px; /* Adjust this value to leave space below the fixed navigation bar */
+      padding: 20px;
+      margin-bottom: 10px;
+  }
+
+.registration-sec{
+    background-color: white;
+    width: 50%;
+    margin-top: 10px; /* Adjust this value to leave space below the fixed navigation bar */
     padding: 20px;
+    margin-bottom: 10px;
   }
 
-.filled {
-    background-color:rgb(211, 238, 242);
+  
+  form div input{
+      width: 95%;
+      padding: 7px;
+      border:1px solid rgb(227, 216, 216)
+      
   }
-
-  head{
-  font-family: 'Inter', sans-serif;
+  
+  input[type="text"]:focus {
+    outline: none;
+    border:2px solid skyblue;
+    
+  
   }
+  
+  input[type="text"]:valid , input[type="email"]:valid{
+    background-color:  rgb(228, 240, 251);
+  }
+  
+  #register-btn{
+      background-color: black;
+      color: white;
+      width: 97.5%;
+  }
+  
+  
